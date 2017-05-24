@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Forms</title>
+		
+		<style type="text/css">
+			body {
+				background-color: SlateGray;
+				color: White;
+				font-family: "Courier New", Courier, monospace;
+			}
+		
+			ul {
+				list-style-type: square;	
+			}
+		
+			#star {
+				list-style-image: url("images/star.png");
+			}
+
+			ol {
+				list-style-type: upper-roman
+			}
+
+			table, th, td{
+				background-color: white;
+				color: black;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			
+			td:hover {
+				background-color: black;
+				color: white;
+			}
+			
+			.forms{
+
+				background-repeat: no-repeat;
+				display: block;
+				margin-bottom: 5px;
+				padding: 5px 5px 5px 30px;
+				background-position: 8px 9px;
+			}
+
+			#email {
+				background-image: url("images/email.png");
+			}
+			
+			#twitter {
+				background-image: url("images/twitter.png");
+			}
+			
+			#web {
+				background-image: url("images/web.png");
+			}
+
+			#submit:hover {
+				color: White;
+				background-color: Black;
+			}
+
+			#submit:active {
+				color: Black;
+				background-color: Yellow; 
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>CSS Lists, Tables and Forms</h1>
+
+		<h2>CSS and Unordered Lists</h2>
+
+		<ul> 
+			<li>CSS has several predefined <b>list-style-type</b> 
+				property values for unordered lists</li>
+			<li>"disc" is used for bullet points</li>
+			<li>"circle" is used for circles</li>
+			<li>"square" is used for squares</li>
+			<li>"none" is used for removing markers</li>
+		</ul>
+
+		<h2>Using Images for Markers</h2>	
+	
+		<ul id="star"> 
+			<li>CSS allows us to use an image to act 
+				as a marker</li>
+			<li>Here we use an image of a star as a marker</li>
+		</ul>
+
+		<h2>CSS and Ordered Lists</h2>
+
+		<ol> 
+			<li>CSS has several predefined <b>list-style-type</b> 
+				property values for ordered lists</li>
+			<li>"decimal" is for numbers (1, 2, 3, etc.)</li>
+			<li>"decimal-leading-zero" is for numbers with
+				a leading zero (01, 02, 03, etc.)</li>
+			<li>"lower-alpha" is for lower case alphabet
+				letters (a, b, c, etc.)</li>
+			<li>"upper-alpha" is for uppercase alphabet 
+				letters (A, B, C, etc.)</li>
+			<li>"lower-roman" is for lower roman numerals 
+				(i., ii., iii., etc.)</li>
+			<li>"upper-roman" is for upper roman numerals 
+				(I, II, III, etc.) </li>
+		</ol>
+
+		<h2>CSS and Tables</h2>
+	
+		<table>
+			<tr>
+				<th>Employee #ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+			</tr>
+			
+			<tr>
+				<td>1003216</td>
+				<td>John</td>
+				<td>Smith</td>
+			</tr>
+			
+			<tr>
+				<td>1004223</td>
+				<td>Jane</td>
+				<td>Doe</td>
+			
+			</tr>
+
+			<tr>
+				<td>1004157</td>
+				<td>Mike</td>
+				<td>Williams</td>
+			</tr>
+		</table>
+		
+		<h2>CSS and Text Forms</h2>
+
+		<input type="text" id="email" class="forms" placeholder="Email"/>
+		<input type="text" id="twitter" class="forms" placeholder="Twitter"/>
+		<input type="text" id="web" class="forms" placeholder="Your Website"/>		
+
+		<input type="submit" value="submit" id="submit" />
+		
+	</body>
+</html>
